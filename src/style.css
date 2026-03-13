@@ -42,6 +42,13 @@ a{color:inherit}
   backdrop-filter: blur(10px);
 }
 
+.topbar{display:flex; align-items:center; justify-content:space-between; gap:12px;}
+
+.lang{display:flex; gap:8px; flex-wrap:wrap;}
+.langbtn{border:1px solid rgba(255,255,255,.14); background: rgba(0,0,0,.18); color: rgba(255,255,255,.82); padding:6px 10px; border-radius:999px; font-size:12px; cursor:pointer;}
+.langbtn:hover{border-color: rgba(109,213,237,.55)}
+.langbtn.active{border-color: rgba(109,213,237,.75); color: rgba(255,255,255,.92)}
+
 .kicker{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   color: var(--muted);
@@ -112,3 +119,6 @@ ul{margin:0; padding-left: 18px; color: var(--muted); line-height: 1.75;}
   .hero{grid-template-columns: 1fr}
   .card{grid-column: span 12}
 }
+
+.canvaspanel{padding:14px 14px 12px;}
+.scene{height: 168px; border: 1px solid rgba(255,255,255,.10); border-radius: 14px; overflow:hidden; background: radial-gradient(600px 240px at 20% 20%, rgba(109,213,237,.10), transparent 60%), rgba(0,0,0,.12);}
